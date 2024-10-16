@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Just Have Fun</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body id="bdy">
+        <h1>Playing with HTML and JavaScript</h1>
+        <img src="ccc.png" alt="bahasa C"/>
+        <p>Have Fun with HTML</p>
+        <p>List nih</p>
+        <ol>
+            <li>pertama</li>
+            <li>kedua</li>
+            <li>ketiga</li>
+            <li>keempat</li>
+        </ol>
+        <button id="btn" class="button1" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick='clickF()'>Click Me!</button>
+        <button id="btn2" class="button2" onclick="ChangeBGC()">ChangeBG</button>
+        <button id="btn3" class="button2" onclick="resetBGC()">Reset</button>
+        <script>
+            function mouseOver() {
+                document.getElementById('btn').innerHTML='Yuhhuuu!';
+            }
+            function mouseOut() {
+                document.getElementById('btn').innerHTML='Click Me!';
+            }
+            function clickF() {
+                if (window.confirm('Maukah kamu klik OK?')) {
+                    window.alert('Thanks! :D');
+                } else {
+                    window.alert('Yaah sedih :(');
+                }
+                document.getElementById('btn').innerHTML='Yes!!! :)';
+            }
+            function changeBGC() {
+                document.getElementById('bdy').style.backgroundColor='white';                
+            }
+            function resetBGC() {
+                document.getElementById('bdy').style.backgroundColor='00c925';
+            }
+        </script>
+    </body>
